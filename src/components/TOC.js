@@ -2,6 +2,7 @@ import React, {Component} from "react";
 
 class TOC extends Component {
   render() {
+    console.log('TOC render');
     var lists = [];
     var data = this.props.data;
     var i = 0;
@@ -10,11 +11,11 @@ class TOC extends Component {
       i++;
     }
     return (
-      <nav>
-        <ul>
-          {lists}
-        </ul>
-      </nav>  
+      <ul>
+        <nav>
+        {lists}
+        </nav>  
+      </ul>
     )
   }
 }
